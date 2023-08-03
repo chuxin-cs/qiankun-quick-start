@@ -1,0 +1,12 @@
+{
+  "name": "qiankun-quick-start",
+  "version": "1.0.0",
+  "description": "qiankun 应用",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node main/src/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
