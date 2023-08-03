@@ -8,13 +8,16 @@
     "install": "npm-run-all --serial install:*",
     "install:main": "cd main && yarn",
     "install:vue-app": "cd vue-app && yarn",
+    "install:sun-app": "cd sun-app && yarn",
     "--------项目启动": "项目启动~",
     "dev": "npm-run-all --parallel dev:*",
     "dev:vue-app": "cd vue-app && yarn serve",
+    "dev:sun-app": "cd sun-app && yarn serve",
     "dev:main": "cd main && yarn serve",
     "--------打包": "项目打包~",
     "build": "npm-run-all build:*",
     "build:vue-app": "cd vue-app && npm run build",
+    "build:sun-app": "cd sun-app && npm run build",
     "build:main": "cd main && npm run build"
   },
   "keywords": [

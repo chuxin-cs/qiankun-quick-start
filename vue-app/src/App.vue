@@ -2,6 +2,11 @@
   <div id="app">
     <h1>我是vue-app子应用</h1>
     <router-view />
+
+    <div>
+      <h2>我是sun-app子应用</h2>
+      <div id="SunContainer"></div>
+    </div>
   </div>
 </template>
 

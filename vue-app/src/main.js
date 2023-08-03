@@ -37,3 +37,18 @@ export async function unmount() {
   instance.$el.innerHTML = "";
   instance = null;
 }
+
+//***************************************尝试将当前应用作为main的子应用然后是sun-app主应用*********************************** */
+import { registerMicroApps, start } from "qiankun";
+
+registerMicroApps([
+  {
+    name: "sun-app",
+    entry: "//localhost:8082",
+    container: "#SunContainer",
+    activeRule: "/vue-app/sun-app",
+  },
+]);
+
+// 启动 qiankun
+start();

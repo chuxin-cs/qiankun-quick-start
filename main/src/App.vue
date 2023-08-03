@@ -2,6 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/vue-app">vue-app 子应用</router-link>
+      <router-link to="/vue-app/sun-app">sun-app 子应用</router-link>
     </nav>
     <router-view />
     <!-- vue-app -->
