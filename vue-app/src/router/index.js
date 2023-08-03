@@ -19,10 +19,11 @@ const routes = [
   },
 ];
 
-export function createRouter() {
+export function createRouter(path) {
+  console.log(process.env.BASE_URL, "process.env.BASE_URL");
   return new VueRouter({
     mode: "history",
-    base: process.env.BASE_URL,
+    base: window.__POWERED_BY_QIANKUN__ ? path : process.env.BASE_URL || "/",
     routes,
   });
 }

@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/vue-app">vue-app 子应用</router-link>
     </nav>
-    <router-view/>
+    <router-view />
+    <!-- vue-app -->
+    <div id="VueContainer"></div>
   </div>
 </template>
 

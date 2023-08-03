@@ -10,9 +10,9 @@ import { registerMicroApps, start } from "qiankun";
 registerMicroApps([
   {
     name: "vue-app",
-    entry: "//localhost:3000",
+    entry: "//localhost:8081",
     container: "#VueContainer",
-    activeRule: "/vueApp",
+    activeRule: "/vue-app",
   },
 ]);
 // 启动 qiankun

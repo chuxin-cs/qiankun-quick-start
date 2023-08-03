@@ -4,9 +4,26 @@
   "description": "qiankun 应用",
   "main": "index.js",
   "scripts": {
-    "dev": "node main/src/main.js"
+    "--------用途": "下载所有的依赖",
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd main && yarn",
+    "install:vue-app": "cd vue-app && yarn",
+    "--------项目启动": "项目启动~",
+    "start": "npm-run-all --parallel start:*",
+    "start:vue-app": "cd vue-app && yarn dev",
+    "start:main": "cd main && yarn dev",
+    "--------打包": "项目打包~",
+    "build": "npm-run-all build:*",
+    "build:vue-app": "cd vue-app && npm run build",
+    "build:main": "cd main && npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "qiankun",
+    "qiankun-quick-start"
+  ],
+  "author": "云层上的光|初心",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }
